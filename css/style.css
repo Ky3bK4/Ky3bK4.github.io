@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Ubuntu+Condensed');
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+.container{
+    width:940px;
+    margin:0 auto;
+    padding-bottom: 40px;
+}
+header{
+    background: #b8268e;
+    height:100vh;
+}
+
+.top-header h1{
+    font-family: 'Lobster', cursive;
+    color: #fff;
+    padding-top:100px;
+    font-size: 40px;
+    text-align: center;
+
+}
+.top-header p{
+font-family: 'Ubuntu Condensed', sans-serif;
+color: #fff;
+margin-top:20px;
+margin-bottom: 30px;
+font-size: 20px;
+text-align: center;
+}
+.btn-container{
+    text-align: center;
+    margin-top:80px;
+    
+}
+.btn-container .btn{
+
+text-align:center;
+padding:15px 30px;
+color: #fff;
+border: 1px solid #fff;
+text-decoration: none;
+font-size: 20px;
+font-weight: bold;
+transition: .5s;
+}
+
+.btn-container .btn:hover{
+    background: rgba(238, 39, 115,0.7);
+
+}
+.bottom-header{
+    background: url('../img/header.png') no-repeat center;
+    height:450px;
+}
+
+.postcard{
+    height:100vh;
+    position: relative;
+    
+    overflow: hidden;
+    
+}
+.postcard .container{
+    position: relative;
+}
+
+.cup-left{
+    position:absolute;
+    background:url('../img/cup.png');
+    top:50px;
+    left:-320px;
+    width:300px;
+    height:300px;
+    transition: 1s;
+    transition-delay: 1s;
+}
+.cup-right{
+    position:absolute;
+    background:url('../img/cup.png');
+    top:50px;
+    right:-320px;
+    width:300px;
+    height:300px;
+    transform: scale(-1,1);
+    transition: 1s;
+    transition-delay: 1s;
+}
+.active-left{
+    left:-20px;
+}
+.active-right{
+    right:-20px;
+}
+.border{
+    
+   z-index: 1;
+    height: 526px;
+    width: 700px;
+    background:url('../img/border-1.png') no-repeat center;
+}
+.image{
+    margin:0 auto;
+    margin-top:180px;
+    left:120px;
+    position:absolute;
+    height: 526px;
+    width: 700px;
+    overflow: hidden;
+}
+.img{
+    position: absolute;
+}
+.img6{
+    background: url('../img/main.jpg') no-repeat center / cover;
+    z-index: -1;
+    width:700px;
+    height: 600px;
+    top:0;
+}
+.img1{
+    width:155px;
+    height:177px;
+    top:0px;
+    left:-177px;
+    opacity:0;
+    background: url('../img/фото1.png') no-repeat;
+    transition: all .5s;
+    transition-delay: .5s;
+}
+.image:hover .img1{
+    transform: rotate(-30deg);
+    top:40px;
+    left:50px;
+    opacity:1;
+}
+.img2{
+    width:155px;
+    height:177px;
+    top:0px;
+    right:-177px;
+    opacity:0;
+    background: url('../img/фото2.png') no-repeat;
+    transition: all .5s;
+    transition-delay: .5s;
+}
+.image:hover .img2{
+    transform: rotate(30deg);
+    top:40px;
+    right:50px;
+    opacity:1;
+}
+
+
+.postcard h1{
+    position: absolute;
+    font-size: 70px;
+    text-transform: uppercase;
+    text-align: center;
+    bottom:-80px;
+    left:50%;
+    transform: translateX(-50%);
+    text-shadow: 1px 1px white,
+                 2px 2px #777;
+    color: #333;
+    transition: all 1s;
+    transition-delay: .7s;
+}
+
+.postcard .active-h1 {
+      text-shadow: 1px 1px white,
+                   2px 2px tomato;
+      color: crimson;
+      bottom:80px;
+      cursor: default;
+      }
